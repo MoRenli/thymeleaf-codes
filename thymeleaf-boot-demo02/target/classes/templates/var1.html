@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h4>获取简单类型</h4>
+<p th:text="${MyName}"></p>
+<br>
+<h4>获取对象属性类型</h4>
+<p th:text="${student.name}"></p>
+<p th:text="${student.id}"></p>
+<p th:text="${student.email}"></p>
+<p th:text="${student.age}"></p>
+学校名称：<p th:text="${student.mySchool.schoolName}"></p><br>
+学习地址：<p th:text="${student.mySchool.address}"></p>
+</body>
+</html>
